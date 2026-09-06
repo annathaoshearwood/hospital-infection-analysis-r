@@ -3,7 +3,7 @@ library(tidyverse)
 
 #IMPORT THE DATA 
 #Importing the data set
-patients <- read_csv("~/R project/hospital_infections.csv")
+patients <- read_csv("data/hospital_infections.csv")
 View(patients)
 
 #INSPECT THE DATA TYPES 
