@@ -55,4 +55,4 @@ table(patients$Bloodstream_Infection)
 patients %>% count(Patient_ID) %>% filter(n>1)
 
 #LOOK FOR IMPOSSIBLE VALUES
-patients %>%filter(Age > 120 | Length_of_Stay < 0 | Temperature < 30)
+patients %>% filter(Age > 120 | Length_of_Stay < 0 | Temperature < 30)
