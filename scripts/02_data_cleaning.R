@@ -6,7 +6,7 @@ library(tidyverse)
 
 #CREATE A COPY OF THE ORGINAL DATA:
 
-patients_clean<-patients
+patients_clean <- patients
 
 #CLEAN NUMERICAL VARIABLES:
 
