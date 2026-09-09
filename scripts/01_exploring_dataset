@@ -1,0 +1,70 @@
+#Hospital infection analysis 
+#Data cleaning and initial exploration 
+
+#IMPORT THE DATA:
+
+library(tidyverse)
+
+patients <- read_csv("~/R project/hospital_infections.csv")
+View(patients)
+
+#INSPECT THE DATA:
+
+#Check the structure and data types
+str(patients)
+
+#Quick overview of the data set 
+glimpse(patients)
+
+#SUMMARISE VARIABLES:
+
+#Statistical summary of numerical variables
+summary(patients$Age)
+summary(patients$Length_of_Stay)
+summary(patients$WBC)
+summary(patients$CRP)
+summary(patients$Temperature)
+
+#Statistical summary of categorical variables
+summary(patients$Sex)
+summary(patients$Ward)
+summary(patients$Catheter)
+summary(patients$Diabetes)
+summary(patients$Bloodstream_Infection)
+
+#Summary of the complete data set
+summary(patients)
+
+#CHECK FOR MISSING VALUES:
+
+#Which values in patients are missing? 
+#R produces logical values
+#TRUE is missing, and FALSE if not missing from data set
+
+is.na(patients)
+
+#Number of missing values in each variable
+
+#Sum of the TRUE and FALSE down each column
+#TRUE = 1 & FALSE = 0 
+colSums(is.na(patients))
+
+#Percentage of missing values in each variable
+colMeans(is.na(patients)) * 100
+
+#CHECK THE CATEGORICAL VARIABLES:
+
+#Check for inconsistent data that needs changing
+table(patients$Sex)
+table(patients$Ward)
+table(patients$Catheter)
+table(patients$Diabetes)
+table(patients$Bloodstream_Infection)
+
+#CHECK FOR DUPLICATES IN PATIENTS:
+
+patients %>% count(Patient_ID) %>% filter(n>1)
+
+#LOOK FOR IMPOSSIBLE VALUES:
+
+patients %>% filter(Age > 120 | Length_of_Stay < 0 | Temperature < 30)
