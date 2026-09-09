@@ -5,7 +5,7 @@
 
 library(tidyverse)
 
-patients <- read_csv("~/R project/hospital_infections.csv")
+patients <- read_csv("data/hospital_infections.csv")
 View(patients)
 
 #INSPECT THE DATA:
