@@ -63,7 +63,9 @@ table(patients$Bloodstream_Infection)
 
 #CHECK FOR DUPLICATES IN PATIENTS:
 
-patients %>% count(Patient_ID) %>% filter(n>1)
+patients %>% 
+count(Patient_ID) %>% 
+filter(n>1)
 
 #LOOK FOR IMPOSSIBLE VALUES:
 
