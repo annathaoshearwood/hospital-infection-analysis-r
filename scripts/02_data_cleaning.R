@@ -1,3 +1,4 @@
+#PURPOSE:
 #Clean and standardize patient data set before analysis 
 
 #LOAD PACKAGE:
