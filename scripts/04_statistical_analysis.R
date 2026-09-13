@@ -1,6 +1,6 @@
 #Purpose: 
 #Test whether selected patient characteristics are associated 
-#with bloodstream infection.
+#with bloodstream infection
 
 #Statistical tests: 
 # 1. Chi-squared test -> Catheter vs Bloodstream Infection 
