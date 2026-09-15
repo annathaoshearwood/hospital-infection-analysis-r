@@ -19,8 +19,8 @@ the project investigated the following questions...
 
 # Dataset 
 
-hospital_infections.csv = raw and uncleaned dataset
-patients_clean.csv = cleaned dataset 
+- hospital_infections.csv = raw and uncleaned dataset
+- patients_clean.csv = cleaned dataset 
 
 * Patient_ID – unique patient identifier
 * Age – patient age in years
