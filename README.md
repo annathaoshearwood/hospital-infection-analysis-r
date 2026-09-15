@@ -23,18 +23,18 @@ hospital_infections.csv = raw and uncleaned dataset
 
 patients_clean.csv = cleaned dataset 
 
-* Patient_ID – unique patient identifier
-* Age – patient age in years
-* Sex – patient sex
-* Ward – hospital ward
-* Admission_Date – date of hospital admission
-* Length_of_Stay – length of hospital stay in days
-* WBC – white blood cell count
-* CRP – C-reactive protein level
-* Temperature – body temperature in °C
-* Catheter – whether the patient had a catheter
-* Diabetes – whether the patient had diabetes
-* Bloodstream_Infection – bloodstream infection status
+* Patient_ID - unique patient identifier
+* Age - patient age in years
+* Sex - patient sex
+* Ward - hospital ward
+* Admission_Date - date of hospital admission
+* Length_of_Stay - length of hospital stay in days
+* WBC - white blood cell count
+* CRP - C-reactive protein level
+* Temperature - body temperature in °C
+* Catheter - whether the patient had a catheter
+* Diabetes - whether the patient had diabetes
+* Bloodstream_Infection - bloodstream infection status
 
 # Data Cleaning
 
@@ -69,8 +69,27 @@ two statistical tests were performed
 * Statistical tests, including the chi-squared test and independent samples t-test, were performed using base R.
 
 # Key Findings
-Catheter vs bloodstream infection: [add chi-squared test result and p-value]
-Age vs bloodstream infection: [add t-test result and p-value]
+Catheter vs bloodstream infection: 
+
+X-squared = 26.133
+df = 1
+p-value = 3.186e-07
+
+* There was a statistically significant association between the use of catheters and bloodstream infection (χ²(1) = 26.133, p < 0.001), suggesting that bloodstream infection rates differed between patients with and without catheters.
+
+  
+Age vs bloodstream infection: 
+
+Mean age without bloodstream infection: 49.8 years
+Mean age with bloodstream infection: 72.2 years
+t = -6.824
+df = 26.417
+p = 2.798 × 10⁻⁷, which is p < 0.001
+95% CI for the difference: -29.14 to -15.66
+
+* There was a statistically significant difference in mean age between patients with and without bloodstream infection (Welch's t-test, t(26.42) = -6.824, p < 0.001). Patients with bloodstream infection had a higher mean age (72.2 years) compared with patients without bloodstream infection (49.8 years).
+
+
 CRP vs bloodstream infection: [describe observed pattern]
 WBC vs bloodstream infection: [describe observed pattern]
 Length of stay vs bloodstream infection: [describe observed pattern]
