@@ -14,8 +14,8 @@ the project investigated the following questions...
 3. Is CRP different between patients with and without bloodstream infection?
 4. Is WBC different between patients with and without bloodstream infection?
 5. Is age associated with the length of hospital stay?
-6. Is catheter use associated with bloodstream infection?
-7. Is the mean age significantly different between patients with and without bloodstream infection?
+6. Is catheter use associated with bloodstream infection? (chi-squared test)
+7. Is the mean age significantly different between patients with and without bloodstream infection? (t-test)
 
 # Dataset
 
@@ -96,11 +96,11 @@ Age vs bloodstream infection:
 
 CRP vs bloodstream infection:
 
-* The boxplot shows that CRP levels were significantly higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median CRP and greater variability. The group without bloodstream infection had lower CRP levels, with two high outliers.
+* The boxplot shows that CRP levels were higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median CRP and greater variability. The group without bloodstream infection had lower CRP levels, with two high outliers.
 
 WBC vs bloodstream infection:
 
-* The boxplot shows that WBC levels were significantly higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median WBC and greater variability, whereas patients without bloodstream infection had a lower median WBC.
+* The boxplot shows that WBC levels were higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median WBC and greater variability, whereas patients without bloodstream infection had a lower median WBC.
 
 Length of stay vs bloodstream infection:
 
