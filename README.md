@@ -76,7 +76,6 @@ df = 1
 p-value = 3.186e-07
 
 * There was a statistically significant association between the use of catheters and bloodstream infection (χ²(1) = 26.133, p < 0.001), suggesting that bloodstream infection rates differed between patients with and without catheters.
-
   
 Age vs bloodstream infection: 
 
@@ -89,11 +88,20 @@ p = 2.798 × 10⁻⁷, which is p < 0.001
 
 * There was a statistically significant difference in mean age between patients with and without bloodstream infection (Welch's t-test, t(26.42) = -6.824, p < 0.001). Patients with bloodstream infection had a higher mean age (72.2 years) compared with patients without bloodstream infection (49.8 years).
 
+CRP vs bloodstream infection:
 
-CRP vs bloodstream infection: [describe observed pattern]
-WBC vs bloodstream infection: [describe observed pattern]
-Length of stay vs bloodstream infection: [describe observed pattern]
-Age vs length of stay: [describe observed relationship]
+* The boxplot shows that CRP levels were significantly higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median CRP and greater variability. The group without bloodstream infection had lower CRP levels, with two high outliers.
+
+WBC vs bloodstream infection:
+
+* The boxplot shows that WBC levels were significantly higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median WBC and greater variability, whereas patients without bloodstream infection had a lower median WBC.
+
+Length of stay vs bloodstream infection:
+
+* The boxplot shows that length of hospital stay in days was significantly higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median length of stay and greater variability compared to those without.
+  
+Age vs length of stay:
+* The scatter plot suggests a positive association between age and length of hospital stay, indicating that older patients tended to have longer hospital stays.
 
 # Limitations
 
