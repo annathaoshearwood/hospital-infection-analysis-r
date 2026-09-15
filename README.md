@@ -78,4 +78,27 @@ Age vs length of stay: [describe observed relationship]
 
 # Limitations
 
-* 
+* Median imputation was used for missing numerical values, which may reduce variability.
+* Missing diabetes values were replaced with "No", the mode. This assumes that missing values were more likely to represent patients without diabetes, which may not necessarily be true.
+* Only a limited number of variables and statistical tests were examined.
+* The statistical tests used examined individual variables separately and did not account for potential interactions between multiple patient characteristics.
+
+# Reproducibility
+
+1. Install R and RStudio.
+2. Download this repository.
+3. Place the dataset in the appropriate project directory.
+4. Install the required packages:
+   install.packages("tidyverse")
+5. Run the 01_exploring_dataset script.
+6. Run the 02_data_cleaning script.
+7. Run the 03_visualisations script.
+8. Run the 04_statistical_analysis script.
+
+# Conclusion
+
+* This project demonstrates a basic clinical data analysis workflow in R.
+* This analysis provides an initial assessment of factors that may be associated with bloodstream infection and provides a foundation for more advanced statistical modelling and projects in the future.
+
+
+
