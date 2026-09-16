@@ -11,14 +11,14 @@
 * CRP levels increase when cytokines, such as interleukin-6 (IL-6), stimulate its production.
 * CRP is normally present at low levels in healthy individuals. Therefore, elevated CRP levels can indicate inflammation or infection or autoimmune disease.
   
-* **CRP = a protein produced as part of the body's inflammatory response.** 
+* CRP = a protein produced as part of the body's inflammatory response.
 
 
 * **White blood cells (WBCs)** are cells of the immune system that help the body detect and respond to pathogens, such as bacteria, viruses, and parasites.
 * A WBC count measures the number of white blood cells present in a volume of blood.
 * A high WBC count can indicate that the body is responding to an infection or experiencing inflammation.
   
-* **WBCs = immune cells that help the body respond to infection and inflammation.** 
+* WBCs = immune cells that help the body respond to infection and inflammation.
 
 # Research Questions
 
