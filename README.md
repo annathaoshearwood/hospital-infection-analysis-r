@@ -13,6 +13,7 @@
   
 * **CRP = a protein produced as part of the body's inflammatory response.** 
 
+
 * **White blood cells (WBCs)** are cells of the immune system that help the body detect and respond to pathogens, such as bacteria, viruses, and parasites.
 * A WBC count measures the number of white blood cells present in a volume of blood.
 * A high WBC count can indicate that the body is responding to an infection or experiencing inflammation.
