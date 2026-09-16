@@ -5,9 +5,23 @@
 * The main aim is to investigate whether factors such as age, length of hospital stay, CRP, WBC, and catheter use differ between patients with and without bloodstream infection.
 * It is important to note that the dataset is synthetic and was generated using AI. The idea was to use a small, synthetic dataset to develop my coding skills as a beginner in R and build my confidence before working with actual patient datasets.
 
+# Key Terminology and Concepts
+
+* **CRP (C-Reactive protein)** is an acute-phase protein produced  by the liver when the body experiences inflammation, injury, or infection.
+* CRP levels increase when cytokines, such as interleukin-6 (IL-6), stimulate its production.
+* CRP is normally present at low levels in healthy individuals. Therefore, elevated CRP levels can indicate inflammation or infection or autoimmune disease.
+  
+* **CRP = a protein produced as part of the body's inflammatory response.** 
+
+* **White blood cells (WBCs)** are cells of the immune system that help the body detect and respond to pathogens, such as bacteria, viruses, and parasites.
+* A WBC count measures the number of white blood cells present in a volume of blood.
+* A high WBC count can indicate that the body is responding to an infection or experiencing inflammation.
+  
+* **WBCs = immune cells that help the body respond to infection and inflammation.** 
+
 # Research Questions
 
-the project investigated the following questions...
+**the project investigated the following questions...**
 
 1. Is there a difference in age between patients with and without bloodstream infection?
 2. Is there a difference in the length of hospital stay between patients with and without bloodstream infection?
@@ -19,9 +33,9 @@ the project investigated the following questions...
 
 # Dataset
 
-hospital_infections.csv = raw and uncleaned dataset
+**hospital_infections.csv = raw and uncleaned dataset**
 
-patients_clean.csv = cleaned dataset 
+**patients_clean.csv = cleaned dataset**
 
 * Patient_ID - unique patient identifier
 * Age - patient age in years
@@ -40,7 +54,7 @@ patients_clean.csv = cleaned dataset
 
 * This script imports and explores the hospital infection dataset.
 * It checks the structure and types of variables, summarises numerical and categorical variables, identifies missing values and duplicate patient IDs, and checks for potentially impossible values.
-*  These initial checks help identify data quality issues before further cleaning and statistical analysis.
+* These initial checks help identify data quality issues before further cleaning and statistical analysis.
   
 # 2. Data Cleaning
 
@@ -51,7 +65,7 @@ patients_clean.csv = cleaned dataset
 
 # 3. Visualisations
 
-visualisations were created using ggplot2 
+**visualisations were created using ggplot2**
 
 Boxplots:
 * Age by Bloodstream Infection Status
@@ -64,18 +78,18 @@ Scatterplot:
 
 # 4. Statistical Analysis
 
-two statistical tests were performed
+**two statistical tests were performed**
 
 1. A chi-squared test of independence was used to investigate whether catheter use was associated with bloodstream infection.
 2. An independent samples t-test was used to compare mean age between patients with and without bloodstream infection.
 
 # Packages Used
 
-* tidyverse – used for data import, data cleaning, manipulation, visualisation, and exploratory analysis.
+* **tidyverse** – used for data import, data cleaning, manipulation, visualisation, and exploratory analysis.
 * Statistical tests, including the chi-squared test and independent samples t-test, were performed using base R.
 
 # Key Findings
-Catheter vs bloodstream infection: 
+**Catheter vs bloodstream infection:**
 
 - X-squared = 26.133
 - df = 1
@@ -83,7 +97,7 @@ Catheter vs bloodstream infection:
 
 * There was a statistically significant association between the use of catheters and bloodstream infection (χ²(1) = 26.133, p < 0.001), suggesting that bloodstream infection rates differed between patients with and without catheters.
   
-Age vs bloodstream infection: 
+**Age vs bloodstream infection:**
 
 - Mean age without bloodstream infection: 49.8 years
 - Mean age with bloodstream infection: 72.2 years
@@ -94,19 +108,19 @@ Age vs bloodstream infection:
 
 * There was a statistically significant difference in mean age between patients with and without bloodstream infection (Welch's t-test, t(26.42) = -6.824, p < 0.001). Patients with bloodstream infection had a higher mean age (72.2 years) compared with patients without bloodstream infection (49.8 years).
 
-CRP vs bloodstream infection:
+**CRP vs bloodstream infection:**
 
 * The boxplot shows that CRP levels were higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median CRP and greater variability. The group without bloodstream infection had lower CRP levels, with two high outliers.
 
-WBC vs bloodstream infection:
+**WBC vs bloodstream infection:**
 
 * The boxplot shows that WBC levels were higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median WBC and greater variability, whereas patients without bloodstream infection had a lower median WBC.
 
-Length of stay vs bloodstream infection:
+**Length of stay vs bloodstream infection:**
 
 * The boxplot shows that length of hospital stay in days was significantly higher in patients with bloodstream infection compared to those without. Patients with bloodstream infection had a higher median length of stay and greater variability compared to those without.
   
-Age vs length of stay:
+**Age vs length of stay:**
 * The scatter plot suggests a positive association between age and length of hospital stay, indicating that older patients tended to have longer hospital stays.
 
 # Limitations
