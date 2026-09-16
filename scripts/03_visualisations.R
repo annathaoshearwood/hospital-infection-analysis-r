@@ -31,7 +31,14 @@ AgebyBlood
 #Save boxplot as a PNG  
 ggsave("~/R project/AgebyBlood.png", AgebyBlood)
 
-##2. Length of Stay (years) by Bloodstream Infection 
+#Mean age of patients with and without bloodstream infection 
+patients_clean %>%
+  group_by(Bloodstream_Infection) %>%
+  summarise(
+    median_age = median(Age, na.rm = TRUE)
+  )
+
+##2. Length of Stay (days) by Bloodstream Infection 
 
 #Research question:
 #Is length of hospital stay different between patients 
@@ -52,6 +59,13 @@ StaybyBlood
 
 #Save boxplot as a PNG  
 ggsave("~/R project/StaybyBlood.png", StaybyBlood)
+
+#Median length of stay (in days) in patients with and without bloodstream infection
+patients_clean %>%
+  group_by(Bloodstream_Infection) %>% 
+  summarise(
+    median_lengthofstay = median(Length_of_Stay, na.rm = TRUE)
+  )
 
 ##3. CRP (mg/L) vs Bloodstream Infection
 #CRP = level of C-reactive protein in blood 
@@ -76,6 +90,13 @@ CRPbyBlood
 #Save boxplot as a PNG  
 ggsave("~/R project/CRPbyBlood.png", CRPbyBlood)
 
+#Median CRP in patients with and without bloodstream infection 
+patients_clean %>%
+  group_by(Bloodstream_Infection) %>% 
+  summarise(
+    median_CRP = median(CRP, na.rm = TRUE)
+  )
+
 ##4. WBC (×10⁹/L) by Bloodstream Infection 
 #WBC = level of white blood cells in blood
 
@@ -97,6 +118,13 @@ WBCbyBlood
 
 #Save boxplot as a PNG  
 ggsave("~/R project/WBCbyBlood.png", WBCbyBlood)
+
+#Median WBC in patients with and without bloodstream infection
+patients_clean %>% 
+  group_by(Bloodstream_Infection) %>% 
+  summarise (
+    median_WBC = median(WBC, na.rm = TRUE)
+  )
 
 ##5. Age (years) vs Length of Stay (days) 
 
